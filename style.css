@@ -12,6 +12,8 @@ body{
 
 }
 
+
+
 .game-container{ 
     position:relative;
     width:380px;
@@ -19,10 +21,11 @@ body{
     margin: 0 auto;
     margin-top: 10px;
     outline: 1px solid black;
+    
 
     transform: scale(1.5) translateY(50%);
 }
 .game-container canvas{
     image-rendering: pixelated;
-        
+         
 }

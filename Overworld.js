@@ -11,8 +11,32 @@ class Overworld {
             this.ctx.drawImage(image, 0, 0)
         };
         image.src = "Images/Pallet.png";
-        const x = 3;
-        const y = 3;
+
+
+
+        //shadow 
+
+        /*
+                const shadow = new Image();
+                shadow.onload = () => {
+                    this.ctx.drawImage(
+                        shadow,
+                        16,
+                        5,
+                        16,
+                        5,
+                        x * 16 - 12,
+                        y * 16 - 18,
+                        16,
+                        5
+        
+        
+                    );
+                }
+                shadow.src = "Images/shadow.png";
+      
+
+
         const hero = new Image();
         hero.onload = () => {
             this.ctx.drawImage(
@@ -30,6 +54,21 @@ class Overworld {
             );
         }
         hero.src = "Images/Hero.png";
+
+          */
+
+        //place some game objects!
+
+        const hero = new GameObject({
+            x: 3,
+            y: 5,
+        })
+
+
+        setTimeout(() => {
+            hero.sprite.draw(this.ctx);
+        }, 200)
+
 
 
 
